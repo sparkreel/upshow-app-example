@@ -88,7 +88,17 @@ The Upshow App exposes 3 function trough the Wisper-RCP that this App can invoke
                 console.error(`reject onError - `, error);
             });
 ```
+* __onSkip__ _When it's invoked tells Upshow that the app has to be skipped in favor of other available content, __Warning__ this method will trigger an error if used _after_ the onReady method has been invoked_
 
+```
+        iframeBridge.invoke('onSkip', ['message stating why are we skipping'])
+            .then(() => {
+                console.log(`resolve onSkip`);
+            })
+            .catch(error => {
+                console.error(`reject onSkip - `, error);
+            });
+```
 ## Mobile Web App (Optional)
 
 ![Mobile](http://s3.amazonaws.com/static.upshow.tv/upshow-apps/image3.png)
