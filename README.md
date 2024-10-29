@@ -127,3 +127,8 @@ When the admin web page is called from Upshow's Contro Panel, Upshow will pass m
 * __app_key__
     * _Identify the instance of the app that is running_
 * \*
+
+
+## Testing Your App
+
+To test your app as well as debug the callbacks and messgaes exchanged with our main application you can use: https://plugin-tester.upshow.tv/
